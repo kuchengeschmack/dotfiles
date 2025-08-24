@@ -116,4 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PS1='[\u@\h \W$(__git_ps1 " (%s)")]\$ '
+PS1='\W$(__git_ps1 " (%s)")\$ '
