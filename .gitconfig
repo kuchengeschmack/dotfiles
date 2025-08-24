@@ -5,5 +5,7 @@
 	defaultBranch = main
 [alias]
 	adog = log --all --decorate --oneline --graph
+	s = status
+	l = log
 [core]
 	editor = vi
