@@ -18,5 +18,8 @@
 .zcompdump**
 .zsh_history
 .zshrc.pre-oh-my-zsh
-dev
-snap
+
+dev/*
+snap/*
+
+!dev/.gitkeep
