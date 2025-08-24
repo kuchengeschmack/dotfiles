@@ -9,3 +9,5 @@
 	l = log
 [core]
 	editor = vi
+[pull]
+	rebase = false
