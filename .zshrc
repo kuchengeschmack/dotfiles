@@ -103,25 +103,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Git aliases
-alias gs="git status"
-alias switch="git switch"
-alias add="git add"
-alias push="git push"
-alias pull="git pull"
-alias gl="git log"
-alias gc="git commit"
-alias main="git switch main"
-alias dev="git switch dev"
-alias branch="git branch"
-alias gsl="git stash list"
-
-# Bash aliases
-alias work="cd ~/dev"
-alias cl="clear"
-alias vz="vi ~/.zshrc"
-alias sz="source ~/.zshrc"
-
 # pnpm
 export PNPM_HOME="/home/dorian/.local/share/pnpm"
 case ":$PATH:" in
@@ -135,3 +116,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Get bash aliases
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
