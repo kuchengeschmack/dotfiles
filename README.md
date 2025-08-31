@@ -8,4 +8,7 @@ This repository stores my local config for my development tools:
 
 It should be cloned in  `~`.
 
-Set `zsh` as the default shell : `chsh -s $(which zsh)`.
+```
+sudo apt install git zsh
+chsh -s $(which zsh)
+```
