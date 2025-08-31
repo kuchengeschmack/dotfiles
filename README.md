@@ -8,4 +8,4 @@ This repository stores my local config for my development tools:
 
 It should be cloned in  `~`.
 
-Repositories for development are expected to lie in your local `~/dev` directory.
+Set `zsh` as the default shell : `chsh -s $(which zsh)`.
