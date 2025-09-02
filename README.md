@@ -10,7 +10,7 @@ This repository stores my local config for my development tools:
 It should be cloned in `~`.
 
 ```
-sudo apt install git zsh npm
+sudo apt install git zsh npm vim
 npm install --global yarn
 chsh -s $(which zsh)
 ```
