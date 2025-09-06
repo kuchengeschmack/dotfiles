@@ -21,4 +21,4 @@ chsh -s $(which zsh)
 
 # Install vundle plugin manager for vim
 git clone git@github.com:VundleVim/Vundle.vim.git
-:PluginInstall # to be run into vim
+vi -c :PluginInstall
