@@ -16,4 +16,4 @@ if [ -f ~/.profile ]; then
 fi
 
 setopt PROMPT_SUBST
-PS1='%c$(__git_ps1 " (%s)")\$ '
+PS1='%~$(__git_ps1 " (%s)")\$ '
