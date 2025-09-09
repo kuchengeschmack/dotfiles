@@ -28,7 +28,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 let g:yats_host_keyword = 1
-autocmd VimEnter * NERDTree
 syntax on
 set number
 set laststatus=2
+map <C-n> :NERDTreeToggle<Cr>
