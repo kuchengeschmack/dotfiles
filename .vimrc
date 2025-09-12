@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'herringtondarkholme/yats.vim'
 Plugin 'preservim/nerdtree'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -33,3 +34,5 @@ syntax on
 set number
 set laststatus=2
 map <C-n> :NERDTreeToggle<Cr>
+let NERDTreeShowHidden = 1
+let g:airline#extensions#tabline#enabled = 1
