@@ -1,5 +1,6 @@
-alias work="cd ~/dev"
-alias ..="cd .."
-alias ...="cd ../.."
+alias work='cd ~/dev'
+alias ..='cd ..'
+alias ...='cd ../..'
 alias ls='ls --color=auto'
 alias ll='ls --all -l --classify'
+alias cl='clear'
