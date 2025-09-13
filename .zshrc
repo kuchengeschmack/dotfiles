@@ -17,4 +17,4 @@ fi
 
 setopt PROMPT_SUBST
 
-PS1='%F{red}%n%f%F{yellow}@%m%f %F{cyan}%~%f$(__git_ps1 " (%s)")\$ '
+PS1='%F{red}%n%f%F{yellow}@%m%f %F{cyan}%~%f$(__git_ps1 " (%s)")%# '
