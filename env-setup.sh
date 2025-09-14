@@ -13,12 +13,9 @@ script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 dotfiles=(
     .bash_aliases
-    .bash_logout
-    .bashrc
     .git-prompt.sh
     .gitconfig
     .gitmessage
-    .profile
     .vimrc
     .zshrc
 )
