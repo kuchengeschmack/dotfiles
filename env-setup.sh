@@ -2,6 +2,13 @@
 
 # This script has been inspired from git@gitlab.com:engmark/tilde.git
 
+printf "This will erase your dot files in your home directory.\nWish to continue ? (y/n)"
+read input
+if ! [ "$input" == "y" ]
+then
+    exit 1
+fi
+
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 dotfiles=(
