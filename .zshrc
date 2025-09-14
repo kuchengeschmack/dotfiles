@@ -1,19 +1,20 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-GIT_PS1_SHOWUPSTREAM="auto"
-GIT_PS1_SHOWCONFLICSTATE="yes"
-GIT_PS1_SHOWDIRTYSTATE="true"
-GIT_PS1_SHOWSTASHSTATE="yes"
-GIT_PS1_SHOWUNTRACKEDFILES="yes"
-GIT_PS1_SHOWCOLORHINTS="yes"
+alias work='cd ~/dev'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ls='ls --color=auto'
+alias ll='ls --all -l --classify'
+alias cl='clear'
+alias github='xdg-open https://github.com'
 
-export GIT_PS1_SHOWUPSTREAM
-export GIT_PS1_SHOWCONFLICSTATE
-export GIT_PS1_SHOWDIRTYSTATE
-export GIT_PS1_SHOWSTASHSTATE
-export GIT_PS1_SHOWUNTRACKEDFILES
-export GIT_PS1_SHOWCOLORHINTS
+export GIT_PS1_SHOWUPSTREAM="auto"
+export GIT_PS1_SHOWCONFLICSTATE="yes"
+export GIT_PS1_SHOWDIRTYSTATE="true"
+export GIT_PS1_SHOWSTASHSTATE="yes"
+export GIT_PS1_SHOWUNTRACKEDFILES="yes"
+export GIT_PS1_SHOWCOLORHINTS="yes"
 
 . ~/.git-prompt.sh
 

@@ -12,7 +12,6 @@ fi
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 dotfiles=(
-    .bash_aliases
     .git-prompt.sh
     .gitconfig
     .gitmessage
