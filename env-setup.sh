@@ -2,15 +2,6 @@
 
 # This script has been inspired from git@gitlab.com:engmark/tilde.git
 
-# Install my tools
-# apt install git zsh npm vim
-
-# Install yarn package manager
-# npm install --global yarn
-
-# Change to zsh
-chsh -s $(which zsh)
-
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 dotfiles=(
