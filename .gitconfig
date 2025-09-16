@@ -11,3 +11,7 @@
 	editor = vi
 [pull]
 	rebase = false
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
