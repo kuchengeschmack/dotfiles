@@ -2,6 +2,6 @@
 
 ```
 # Clone this repository
-# Then run the environment setup script
-./env-setup.sh
+# Then run the setup script
+./setup.sh
 ```
