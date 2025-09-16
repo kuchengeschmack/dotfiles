@@ -11,5 +11,3 @@
 	editor = vi
 [pull]
 	rebase = false
-[commit]
-        template = ~/.gitmessage
