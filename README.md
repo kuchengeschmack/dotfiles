@@ -1,4 +1,4 @@
-# My linux setup
+# My home directory setup
 
 ```
 # Clone this repository
