@@ -1,7 +1,6 @@
-# My home directory setup
+# My home directory
 
 ```
-# Clone this repository
-# Then run the setup script
+# Clone this repository anywhere, then run the setup script
 ./setup.sh
 ```
