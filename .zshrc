@@ -32,4 +32,4 @@ setopt PROMPT_SUBST
 
 autoload -Uz compinit && compinit
 
-PROMPT='%F{red}%n%f%F{yellow}@%m%f %F{cyan}%~%f$(__git_ps1 " (%s)") %# '
+PROMPT='%F{red}%n%f%F{yellow}@%m%f%F{cyan}:%~%f$(__git_ps1 " (%s)") %# '
