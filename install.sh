@@ -20,14 +20,13 @@ echo ".git-prompt has been created in ${HOME}."
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-dotfiles=(
-    .gitconfig
-    .vimrc
-    .zshrc
+mapfile -t dotfiles < <(
+    find "$script_dir" -type f -name '*.symlink' -print0 | 
+    xargs -0 -n1 basename
 )
 
 for dotfile in "${dotfiles[@]}"; do
-    ln --force --symbolic --verbose "${script_dir}/${dotfile}" "${HOME}"
+    ln --force --symbolic --verbose "${script_dir}/${dotfile}" "${HOME}/${dotfile%.symlink}"
 done
 
 echo "Dot files set up."
