@@ -14,7 +14,9 @@ fi
 echo "Continuing..."
 echo "Setting up dot files..."
 
-curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
+echo "Downloading .git-prompt.sh from Github..."
+curl --silent https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
+echo ".git-prompt has been created in ${HOME}."
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
