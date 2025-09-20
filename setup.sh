@@ -14,10 +14,11 @@ fi
 echo "Continuing..."
 echo "Setting up dot files..."
 
+curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
+
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 dotfiles=(
-    .git-prompt.sh
     .gitconfig
     .vimrc
     .zshrc
