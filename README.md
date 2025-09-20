@@ -1,4 +1,4 @@
-# My home directory
+# My dotfiles
 
 ```
 # Clone this repository anywhere, then run the install script
