@@ -3,35 +3,28 @@
 # This script has been inspired from git@gitlab.com:engmark/tilde.git
 
 echo "This will erase your dot files in your home directory and install vundle plugin manager for vim."
-read -p "Wish to continue (y/n) [n]: " answer
-answer=${answer:-n}
+read -p "Wish to continue (y/n) [y]: " answer
+answer=${answer:-y}
 if [[ ! "$answer" =~ ^[Yy]$ ]];
 then
     echo "Aborting..."
     exit 1
 fi
 
-echo "Continuing..."
-echo "Setting up dot files..."
-
-echo "Downloading .git-prompt.sh from Github..."
-curl --silent https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
-echo ".git-prompt has been created in ${HOME}."
+curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh > ~/.git-prompt.sh
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-mapfile -t dotfiles < <(
-    find "$script_dir" -type f -name '*.symlink' -print0 | 
-    xargs -0 -n1 basename
+dotfiles=(
+    .config/git/.gitconfig.symlink
+    .config/vim/.vimrc.symlink
+    .config/zsh/.zshrc.symlink
 )
 
 for dotfile in "${dotfiles[@]}"; do
-    ln --force --symbolic --verbose "${script_dir}/${dotfile}" "${HOME}/${dotfile%.symlink}"
+   ln --force --symbolic --verbose "${script_dir}/${dotfile}" "${HOME}/${dotfile%.symlink}"
+   ln --force --symbolic --verbose "${HOME}/${dotfile%.symlink}" "${HOME}/$(basename "${dotfile}" .symlink)"
 done
-
-echo "Dot files set up."
-
-echo "Setting up Vundle plugin manager for vim..."
 
 # Clone and install vundle plugin manager
 if [ -z "$(find ~/.vim/bundle/Vundle.vim -mindepth 1 -maxdepth 1 | head -n1)" ]; then
