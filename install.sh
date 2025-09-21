@@ -24,9 +24,9 @@ dotfiles=(
 for dotfile in "${dotfiles[@]}"; do
    ln --force --symbolic --verbose --directory "${script_dir}/${dotfile}" "${HOME}/.config"
 done
-   ln --force --symbolic --verbose "${HOME}/.config/git/.gitconfig.symlink" "${HOME}/.gitconfig"
-   ln --force --symbolic --verbose "${HOME}/.config/vim/.vimrc.symlink" "${HOME}/.vimrc"
-   ln --force --symbolic --verbose "${HOME}/.config/zsh/.zshrc.symlink" "${HOME}/.zshrc"
+   ln --force --symbolic --verbose "${HOME}/.config/git/.gitconfig" "${HOME}/.gitconfig"
+   ln --force --symbolic --verbose "${HOME}/.config/vim/.vimrc" "${HOME}/.vimrc"
+   ln --force --symbolic --verbose "${HOME}/.config/zsh/.zshrc" "${HOME}/.zshrc"
 
 # Clone and install vundle plugin manager
 if [ -z "$(find ~/.vim/bundle/Vundle.vim -mindepth 1 -maxdepth 1 | head -n1)" ]; then
