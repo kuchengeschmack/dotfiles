@@ -16,7 +16,7 @@ export GIT_PS1_SHOWSTASHSTATE="yes"
 export GIT_PS1_SHOWUNTRACKEDFILES="yes"
 export GIT_PS1_SHOWCOLORHINTS="yes"
 
-. ~/.git-prompt.sh
+. ~/.config/git/.git-prompt.sh
 
 # Get bash aliases
 if [ -f ~/.bash_aliases ]; then
