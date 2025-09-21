@@ -16,15 +16,17 @@ curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/complet
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 dotfiles=(
-    .config/git/.gitconfig.symlink
-    .config/vim/.vimrc.symlink
-    .config/zsh/.zshrc.symlink
+    .config/git
+    .config/vim
+    .config/zsh
 )
 
 for dotfile in "${dotfiles[@]}"; do
-   ln --force --symbolic --verbose "${script_dir}/${dotfile}" "${HOME}/${dotfile%.symlink}"
-   ln --force --symbolic --verbose "${HOME}/${dotfile%.symlink}" "${HOME}/$(basename "${dotfile}" .symlink)"
+   ln --force --symbolic --verbose --directory "${script_dir}/${dotfile}" "${HOME}/.config"
 done
+   ln --force --symbolic --verbose "${HOME}/.config/git/.gitconfig.symlink" "${HOME}/.gitconfig"
+   ln --force --symbolic --verbose "${HOME}/.config/vim/.vimrc.symlink" "${HOME}/.vimrc"
+   ln --force --symbolic --verbose "${HOME}/.config/zsh/.zshrc.symlink" "${HOME}/.zshrc"
 
 # Clone and install vundle plugin manager
 if [ -z "$(find ~/.vim/bundle/Vundle.vim -mindepth 1 -maxdepth 1 | head -n1)" ]; then
