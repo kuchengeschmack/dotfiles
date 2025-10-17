@@ -1,6 +1,7 @@
 [user]
 	email = d.reale.caron@protonmail.com
 	name = Dorian Réale Caron
+	signingkey = AE26FC5BF93CC699
 [init]
 	defaultBranch = main
 [alias]
