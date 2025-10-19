@@ -5,7 +5,7 @@
 git clone https://github.com/kuchengeschmack/dotfiles.git "${HOME}/Dev/dotfiles"
 
 # Get the git prompt script
-curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh --output "${HOME}/.config/git/.git-prompt.sh"
+curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh --output --create-dirs "${HOME}/.config/git/.git-prompt.sh"
 
 # Symlink you config files
 ln -s "${HOME}/Dev/dotfiles/.config/git/.gitconfig" "${HOME}/.gitconfig"
