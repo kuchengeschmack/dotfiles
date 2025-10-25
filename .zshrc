@@ -32,7 +32,7 @@ alias cl='clear'
 alias github='xdg-open https://github.com'
 alias dotfiles='cd ~/dev/dotfiles'
 
-. ~/.config/git/.git-prompt.sh
+. ${HOME}/.git-prompt.sh
 
 
 setopt PROMPT_SUBST
