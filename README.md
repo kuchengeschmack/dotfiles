@@ -6,7 +6,7 @@ export DEV="${HOME}/dev"
 export DOTFILES="${DEV}/dotfiles"
 
 # Clone this repository anywhere
-git clone https://github.com/kuchengeschmack/dotfiles.git "${DOTFILES_DIR}"
+git clone https://github.com/kuchengeschmack/dotfiles.git "${DOTFILES}"
 
 # Get the git prompt script
 curl https://raw.githubusercontent.com/git/git/refs/heads/master/contrib/completion/git-prompt.sh --output "${HOME}/.git-prompt.sh"
