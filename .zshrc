@@ -40,7 +40,7 @@ alias github='xdg-open https://github.com'
 alias dev='cd ${DEV}'
 alias dotfiles='cd ${DOTFILES}'
 
-sh ${HOME}/.git-prompt.sh
+. ${HOME}/.git-prompt.sh
 
 setopt PROMPT_SUBST
 
