@@ -9,7 +9,7 @@
 	s = status
 	l = log
 [core]
-	editor = vi
+	editor = hx
 [pull]
 	rebase = false
 [merge]
