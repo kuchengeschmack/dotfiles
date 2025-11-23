@@ -3,7 +3,7 @@
 ```bash
 # Clone this repository anywhere
 git clone https://github.com/kuchengeschmack/dotfiles.git
-export DOTFILES="$(pwd)/dotfiles"
+set DOTFILES $(pwd)/dotfiles
 
 # Symlink you config files
 ln -s $DOTFILES/.gitconfig $HOME/.gitconfig

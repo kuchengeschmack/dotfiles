@@ -13,9 +13,9 @@ set -g __fish_git_prompt_color_stagedstate yellow
 set -g __fish_git_prompt_color_untrackedfiles magenta
 set -g __fish_git_prompt_color_upstream cyan
 
-# Custom environment variables
-export DEV="$HOME/dev"
-export DOTFILES="$DEV/dotfiles"
+# Custom variables
+set DEV $HOME/dev
+set DOTFILES $DEV/dotfiles
 
 # Aliases
 alias ..='cd ..'
