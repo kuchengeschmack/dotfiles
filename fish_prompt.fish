@@ -1,11 +1,11 @@
 function fish_prompt
-    set_color red
+    set_color green
     printf "%s" (whoami)
     
     set_color yellow
     printf "@%s" (hostname -s)
     
-    set_color green
+    set_color red
     printf ":%s" (prompt_pwd)
 
     # Git branch similar to __git_ps1
