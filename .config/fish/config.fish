@@ -15,7 +15,7 @@ set -g __fish_git_prompt_color_upstream cyan
 
 # Custom variables
 set DEV $HOME/dev
-set DOTFILES $DEV/dotfiles
+set DOTFILES $DEV/.dotfiles
 
 # Aliases
 alias ..='cd ..'
@@ -25,4 +25,4 @@ alias ll='ls --all -l --classify'
 alias cl='clear'
 alias github='xdg-open https://github.com'
 alias dev='cd $DEV'
-alias dotfiles='git --git-dir="$HOME/dev/.dotfiles" --work-tree="$HOME"'
+alias dotfiles='git --git-dir="$DOTFILES" --work-tree="$HOME"'
