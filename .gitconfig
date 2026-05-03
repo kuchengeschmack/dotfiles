@@ -1,0 +1,18 @@
+[user]
+	email = d.reale.caron@protonmail.com
+	name = Dorian Réale Caron
+	signingkey = AE26FC5BF93CC699
+[init]
+	defaultBranch = main
+[alias]
+	adog = log --all --decorate --oneline --graph
+	s = status
+	l = log
+[core]
+	editor = hx
+[pull]
+	rebase = false
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff
