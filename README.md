@@ -1,7 +1,7 @@
 # My dotfiles
 
 ```bash
-# Based on the original idea from: https://news.ycombinator.com/item?id=11071754
+# Based on an original idea from: https://news.ycombinator.com/item?id=11071754
 
 # My dotfiles can be replicated on a new system like:
 git clone --bare <git-repo-url> $HOME/dev/.dotfiles
