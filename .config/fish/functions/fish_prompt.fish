@@ -1,12 +1,14 @@
 function fish_prompt
+    set -l last_status $status
+
     echo -n (date +%H%M)" "
 
     set_color green
     printf "%s" (whoami)
-    
+
     set_color yellow
     printf "@%s" (hostname -s)
-    
+
     set_color red
     printf ":%s" (prompt_pwd)
 
@@ -19,7 +21,7 @@ function fish_prompt
         echo -n " ($git)"
     end
 
-    echo -n " [$status]"
+    echo -n " [$last_status]"
 
     echo -n " \$ "
 end
