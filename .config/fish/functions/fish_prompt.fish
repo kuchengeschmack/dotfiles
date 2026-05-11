@@ -21,7 +21,9 @@ function fish_prompt
         echo -n " ($git)"
     end
 
-    echo -n " [$last_status]"
+    if test $last_status -ne 0
+        echo -n (set_color red)" [$last_status]"(set_color normal)
+    end
 
     echo -n " > "
 end
