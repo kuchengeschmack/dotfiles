@@ -1,8 +1,6 @@
 function fish_prompt
     set -l last_status $status
 
-    echo -n (date +"%H%M")" "
-
     set_color green
     printf "%s" (whoami)
 
