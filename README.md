@@ -7,5 +7,4 @@
 git clone --bare <git-repo-url> $HOME/.dotfiles
 alias dot='git --git-dir="$HOME/.dotfiles" --work-tree="$HOME"'
 dot checkout
-dot config --local status.showUntrackedFiles no
 ```
