@@ -1,4 +1,4 @@
-function dev --wraps='cd /home/dorian/Projects' --description 'alias dev=cd /home/dorian/Projects'
-  cd /home/dorian/Projects $argv
-        
+function dev --wraps='cd $HOME/Projects' --description 'alias dev=cd $HOME/Projects'
+    cd $HOME/Projects $argv
+
 end
